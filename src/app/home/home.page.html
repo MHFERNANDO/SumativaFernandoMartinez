@@ -1,0 +1,14 @@
+<app-nav-bar [cabecera]="'Noticiero Tecniquito'"></app-nav-bar>
+<ion-content >
+
+  <ion-grid>
+    <ion-row style="display: flex;justify-content: center;">
+
+      <ion-col  sizeSm="12" sizeLg="4" sizeMd="6" sizeXs="12"  *ngFor="let cards of cards">
+        <app-news-card [titulo]=cards.titulo [descripcion] = cards.descripcion [imagen]= cards.imagen ></app-news-card>
+      </ion-col>
+
+    </ion-row>
+  </ion-grid>
+
+</ion-content>
